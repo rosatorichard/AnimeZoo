@@ -52,65 +52,65 @@ public class MainActivity extends AppCompatActivity {
 
 //       makeDatabase();
         SQLightHandler handler=new SQLightHandler(this);
-        anime=new Anime("Toradora",R.drawable.heart,"Romance","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Toradora",R.drawable.heart,"Romance","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Kaichou wa Maidsama",R.drawable.heart,"Romance","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Kaichou wa Maidsama",R.drawable.heart,"Romance","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Hataraku Maousama",R.drawable.heart,"Romance","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Hataraku Maousama",R.drawable.heart,"Romance","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Sakurasou no Pet na Kanojo",R.drawable.heart,"Romance","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Sakurasou no Pet na Kanojo",R.drawable.heart,"Romance","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Gekkan Shoujo Nozakikun",R.drawable.heart,"Romance","KILL THEM ALL", R.drawable.action);
-        handler.saveAnime(anime);
-
-
-        anime=new Anime("Mahouka Koukou no Rettousei",R.drawable.action,"Action","KILL THEM ALL", R.drawable.action);
-        handler.saveAnime(anime);
-        anime=new Anime("Higashi no Eden",R.drawable.action,"Action","KILL THEM ALL", R.drawable.action);
-        handler.saveAnime(anime);
-        anime=new Anime( "Sankarea",R.drawable.action,"Action","KILL THEM ALL", R.drawable.action);
-        handler.saveAnime(anime);
-        anime=new Anime("Ore Monogatari",R.drawable.action,"Action","KILL THEM ALL", R.drawable.action);
-        handler.saveAnime(anime);
-        anime=new Anime("Ore no Nounai Sentakushi ga Gakuen Love Comedy wo Zenryoku de Jama Shiteiru",R.drawable.action,"Action","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Gekkan Shoujo Nozakikun",R.drawable.heart,"Romance","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
 
 
-        anime=new Anime("Mayo Chiki",R.drawable.comedy,"Comedy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Mahouka Koukou no Rettousei",R.drawable.action,"Action","KILL THEM ALL",R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Baka to Test to Shoukanjuu",R.drawable.comedy,"Comedy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Higashi no Eden",R.drawable.action,"Action","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Toki wo Kakeru Shoujo",R.drawable.comedy,"Comedy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime( "Sankarea",R.drawable.action,"Action","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Accel World",R.drawable.comedy,"Comedy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Ore Monogatari",R.drawable.action,"Action","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Tonari no Kaibutsukun",R.drawable.comedy,"Comedy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Ore no Nounai Sentakushi ga Gakuen Love Comedy wo Zenryoku de Jama Shiteiru",R.drawable.action,"Action","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
 
 
-
-        anime=new Anime("Zero no Tsukaima",R.drawable.fantasy,"Fantasy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Mayo Chiki",R.drawable.comedy,"Comedy","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",R.drawable.fantasy,"Fantasy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Baka to Test to Shoukanjuu",R.drawable.comedy,"Comedy","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Bakemonogatari",R.drawable.fantasy,"Fantasy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Toki wo Kakeru Shoujo",R.drawable.comedy,"Comedy","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Sword Art Online",R.drawable.fantasy,"Fantasy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Accel World",R.drawable.comedy,"Comedy","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Elfen Lied",R.drawable.fantasy,"Fantasy","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Tonari no Kaibutsukun",R.drawable.comedy,"Comedy","KILL THEM ALL",R.raw.beep1);
         handler.saveAnime(anime);
 
 
 
-        anime=new Anime("Clannad",R.drawable.magic,"Magic","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Zero no Tsukaima",R.drawable.fantasy,"Fantasy","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Shigatsu wa Kimi no Uso",R.drawable.magic,"Magic","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",R.drawable.fantasy,"Fantasy","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Chuunibyou demo Koi ga Shitai",R.drawable.magic,"Magic","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Bakemonogatari",R.drawable.fantasy,"Fantasy","KILL THEM ALL",R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Fate stay night",R.drawable.magic,"Magic","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Sword Art Online",R.drawable.fantasy,"Fantasy","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
-        anime=new Anime("Kimi no Na wa",R.drawable.magic,"Magic","KILL THEM ALL", R.drawable.action);
+        anime=new Anime("Elfen Lied",R.drawable.fantasy,"Fantasy","KILL THEM ALL",R.raw.beep1);
+        handler.saveAnime(anime);
+
+
+
+        anime=new Anime("Clannad",R.drawable.magic,"Magic","KILL THEM ALL", R.raw.beep1);
+        handler.saveAnime(anime);
+        anime=new Anime("Shigatsu wa Kimi no Uso",R.drawable.magic,"Magic","KILL THEM ALL", R.raw.beep1);
+        handler.saveAnime(anime);
+        anime=new Anime("Chuunibyou demo Koi ga Shitai",R.drawable.magic,"Magic","KILL THEM ALL",R.raw.beep1);
+        handler.saveAnime(anime);
+        anime=new Anime("Fate stay night",R.drawable.magic,"Magic","KILL THEM ALL", R.raw.beep1);
+        handler.saveAnime(anime);
+        anime=new Anime("Kimi no Na wa",R.drawable.magic,"Magic","KILL THEM ALL", R.raw.beep1);
         handler.saveAnime(anime);
     }
 

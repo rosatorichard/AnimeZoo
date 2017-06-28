@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +22,7 @@ public class AnimeSelection extends AppCompatActivity {
 
     private static final String TAG = "The Derp";
     List<Anime> thisList=new ArrayList<>();
+    private static final String PASSED = "PASS_THIS";
     private static final String KEY_SELECTION = "SELECTION";
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView.ItemAnimator itemAnimator;
@@ -197,31 +200,50 @@ public class AnimeSelection extends AppCompatActivity {
 
 
         //Retarded on click listener that works
-        listView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
-            @Override
-            public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
-
-                View Child=rv.findChildViewUnder(e.getX(),e.getY());
-
-                if(Child != null) {
-                    TextView text=Child.findViewById(R.id.tvtNameAnime);
-                    Log.d(TAG, "onInterceptTouchEvent: "+text.getText());
-                }
-                return false;
-            }
-
-            @Override
-            public void onTouchEvent(RecyclerView rv, MotionEvent e) {
-
-            }
-
-            @Override
-            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-
-            }
-        });
 
 
+
+//        listView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                TextView text= view.findViewById(R.id.tvtNameAnime);
+//                startClass(text);
+//            }
+//        });
+//        listView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+//            @Override
+//            public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+//
+//                View Child=rv.findChildViewUnder(e.getX(),e.getY());
+//
+//                if(Child != null) {
+//                    TextView text=Child.findViewById(R.id.tvtNameAnime);
+//                    startClass(text);
+//                    Log.d(TAG, "onInterceptTouchEvent: "+text.getText());
+//                }
+//                return false;
+//            }
+//
+//            @Override
+//            public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+//
+//            }
+//
+//            @Override
+//            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+//
+//            }
+//        });
+
+
+    }
+
+    public void startClass(TextView textView)
+    {
+        Intent intent1=new Intent(this,SelectedAnime.class);
+        intent1.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        intent1.putExtra(PASSED,String.valueOf(textView.getText()));
+        startActivity(intent1);
     }
 
     @Override

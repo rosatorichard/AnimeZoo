@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.batchmates.android.animezoo.SelectedAnime">
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="match_parent"
+        android:layout_height="300sp" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/transparantBack"
+        android:textColor="@color/colortitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvGenreThis"
+        android:gravity="center"
+        android:background="@color/transparantBack"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colortitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvdiscription"
+        android:background="@color/transparantBack"
+        android:textColor="@color/colortitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="playSound"
+        android:id="@+id/btnAnimeSound"
+        android:text="Anime Sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

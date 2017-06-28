@@ -1,6 +1,8 @@
 package com.batchmates.android.animezoo;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +35,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             name=(TextView) itemView.findViewById(R.id.tvtNameAnime);
             pic=(ImageView)itemView.findViewById(R.id.animeImage);
             genre=(TextView)itemView.findViewById(R.id.tvGenre);
+
         }
     }
 
@@ -43,12 +46,26 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
         Anime anime=contactList.get(position);
 
         holder.name.setText(anime.getAnimeName());
         holder.pic.setBackgroundResource(anime.getAnimePicture());
         holder.genre.setText(anime.getAnimeGenre());
+
+
+        //not working
+        holder.name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(view.getContext(),SelectedAnime.class);
+                Log.d("", "onClick: "+""+holder.name.getText().toString());
+                intent.putExtra("PASS_THIS",holder.name.getText().toString());
+                view.getContext().startActivity(intent);
+            }
+        });
+
+
 
     }
 

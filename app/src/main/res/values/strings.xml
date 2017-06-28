@@ -3,5 +3,6 @@
     <string name="anime_app">Anime List</string>
     <string name="anime_title">ANIME APP</string>
     <string name="anime_genre">Genre</string>
-    <string name="anime_choices">Pick An Anime</string>
+    <string name="anime_choices">Pick An Anime</string>\
+    <string name="PASSED">PASS_THIS</string>
 </resources>
