@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AnimeZoo</string>
+    <string name="anime_app">Anime List</string>
+    <string name="anime_title">ANIME APP</string>
+    <string name="anime_genre">Genre</string>
+    <string name="anime_choices">Pick An Anime</string>
+</resources>
