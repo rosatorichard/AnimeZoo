@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.IOException;
+
 public class SelectedAnime extends AppCompatActivity {
 
     private static final String PASSED = "PASS_THIS";
@@ -18,6 +20,7 @@ public class SelectedAnime extends AppCompatActivity {
     private TextView name,genre,disc;
     private ImageView pic;
     private int music;
+    private MediaPlayer media;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,18 +54,23 @@ public class SelectedAnime extends AppCompatActivity {
         music=anime.getSound();
 
 
+        media=new MediaPlayer();
+
+
 
 
 
     }
 
-    public void playSound(View view) {
+    public void playSound(View view) throws IOException {
 
         Log.d("This Song", "playSound: "+music);
         //MediaPlayer media = MediaPlayer.create(this,R.raw.beep1);
-        MediaPlayer media = MediaPlayer.create(this,music);
-        media.setVolume(0,1);
+
+        media = MediaPlayer.create(this, music);
+        media.setVolume(0, 1);
         media.start();
+
         
     }
 
@@ -73,6 +81,11 @@ public class SelectedAnime extends AppCompatActivity {
 
         if(item.getItemId()==android.R.id.home)
         {
+            if(media.isPlaying())
+            {
+                media.stop();
+                media.release();
+            }
             finish();
         }
         return super.onOptionsItemSelected(item);
