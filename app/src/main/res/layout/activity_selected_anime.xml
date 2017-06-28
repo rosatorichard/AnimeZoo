@@ -18,7 +18,7 @@
         android:gravity="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:background="@color/transparantBack"
+        android:background="@color/transparantBack3"
         android:textColor="@color/colortitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -26,7 +26,7 @@
     <TextView
         android:id="@+id/tvGenreThis"
         android:gravity="center"
-        android:background="@color/transparantBack"
+        android:background="@color/transparantBack3"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/colortitle"
@@ -35,7 +35,7 @@
 
     <TextView
         android:id="@+id/tvdiscription"
-        android:background="@color/transparantBack"
+        android:background="@color/transparantBack3"
         android:textColor="@color/colortitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

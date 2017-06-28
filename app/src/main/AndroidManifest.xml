@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".AnimeSelection" />
-        <activity android:name=".SelectedAnime"></activity>
+        <activity android:name=".Main2Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".AnimeSelection" android:screenOrientation="portrait"/>
+        <activity android:name=".SelectedAnime" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

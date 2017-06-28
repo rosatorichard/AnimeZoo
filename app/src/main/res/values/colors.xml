@@ -6,4 +6,5 @@
     <color name="colortitle">#000000</color>
     <color name="transparantBack">#81be1616</color>
     <color name="transparantBack2">#9bbe1616</color>
+    <color name="transparantBack3">#99ffffff</color>
 </resources>

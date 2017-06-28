@@ -65,7 +65,7 @@ public class SelectedAnime extends AppCompatActivity {
         media.start();
         
     }
-    
+
 
 
     @Override
